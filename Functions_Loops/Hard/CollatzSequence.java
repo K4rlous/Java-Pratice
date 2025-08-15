@@ -5,27 +5,24 @@ import java.util.Scanner;
 public class CollatzSequence {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Type a positive number: ");
         int input = scanner.nextInt();
-
-        if (input <= 0) {
+        collatzSequence(input);
+        scanner.close();
+    }
+    public static void collatzSequence(int x){
+        if (x <= 0) {
             System.out.println("[ERROR] The number must be positive!");
-            scanner.close();
             return;
         }
-
-        System.out.println(input);
-
-        while (input != 1) {
-            if (input % 2 == 0) {
-                input = input / 2;
+        System.out.println(x);
+        while (x != 1) {
+            if (x % 2 == 0) {
+                x = x / 2;
             } else {
-                input = input * 3 + 1;
+                x = x * 3 + 1;
             }
-            System.out.println(input);
+            System.out.println(x);
         }
-
-        scanner.close();
     }
 }

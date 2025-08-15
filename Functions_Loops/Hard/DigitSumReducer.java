@@ -8,18 +8,18 @@ public class DigitSumReducer {
 
         System.out.print("Type a big int: ");
         int input = scanner.nextInt();
-
-        while (input >= 10) {
+        digitSumReducer(input);
+        scanner.close();
+    }
+    public static void digitSumReducer(int x){
+        while (x >= 10) {
             int sum = 0;
-            String inputStr = String.valueOf(input);
+            String inputStr = String.valueOf(x);
             for (int i = 0; i < inputStr.length(); i++) {
                 sum += Character.getNumericValue(inputStr.charAt(i));
             }
-            input = sum;
+            x = sum;
         }
-
-        System.out.println(input);
-
-        scanner.close();
+        System.out.println(x);
     }
 }
