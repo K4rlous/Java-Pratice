@@ -18,5 +18,17 @@ public class Main {
         System.out.println(emp1);
         System.out.println(emp2);
 
+        // 03 - Library
+        LibraryItem[] items = new LibraryItem[4];
+        items[0] = new Book("UFO sightings and Ice cream", 1971, "Some crazy dude");
+        items[1] = new Book("The true about the platypus cult", 1666, "Unknown");
+        items[2] = new Magazine("How to walk backwards", 2006, 6);
+        items[3] = new Magazine("Why you should not trust the government", 2001, 5453534);
+
+        for (LibraryItem item : items){
+            System.out.println(item.getDetails());
+        }
+
+
     }
 }
