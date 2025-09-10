@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/OOP" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Generics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Collections" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Annotations" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
